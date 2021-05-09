@@ -68,7 +68,8 @@ public class CommandLineInterface {
                 run.invoke(runner);
 
                 if (cmd.hasOption("l")) {
-                    Method getJSONResult = MultiplayerGameRunner.class.getDeclaredMethod("getJSONResult");
+                    Method getJSONResult = MultiplayerGameRunner.class.getSuperclass()
+                            .getDeclaredMethod("getJSONResult");
                     getJSONResult.setAccessible(true);
 
                     Files.asCharSink(Paths.get(cmd.getOptionValue("l")).toFile(), Charset.defaultCharset())
