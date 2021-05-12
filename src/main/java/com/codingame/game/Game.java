@@ -245,11 +245,7 @@ public class Game {
             );
         });
 
-        List<String> possibleMoves = getPossibleMoves(player);
-        lines.add(String.valueOf(possibleMoves.size()));
-        possibleMoves
-            .stream()
-            .forEach(lines::add);
+        List<String> possibleMoves = new ArrayList<>();
 
         return lines;
     }
