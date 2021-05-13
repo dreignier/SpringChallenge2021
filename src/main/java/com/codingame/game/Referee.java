@@ -33,8 +33,8 @@ public class Referee extends AbstractReferee {
         try {
             Config.load(gameManager.getGameParameters());
             Config.export(gameManager.getGameParameters());
-            gameManager.setFirstTurnMaxTime(1000);
-            gameManager.setTurnMaxTime(100);
+            gameManager.setFirstTurnMaxTime(2000);
+            gameManager.setTurnMaxTime(200);
 
             gameManager.setFrameDuration(500);
 

@@ -61,7 +61,7 @@ public class Game {
 
     public void init(long seed) {
 
-        switch (gameManager.getLeagueLevel()) {
+        switch (3) {
         case 1:
             // Wood 2
             MAX_ROUNDS = 1;
@@ -245,7 +245,7 @@ public class Game {
             );
         });
 
-        List<String> possibleMoves = new ArrayList<>();
+        lines.add("0");
 
         return lines;
     }
